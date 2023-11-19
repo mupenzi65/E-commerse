@@ -1,0 +1,84 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Urbanist:ital,wght@0,100;0,400;0,500;0,800;1,200;1,600&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Urbanist',sans-serif;
+}
+.containe{
+  max-width: 1270px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.section{
+  padding: 50px 0;
+}
+
+.MuiTelInput-TextField{
+  color: aqua;
+}
+
+.sticky_header{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 3px 3px -8px 3px #ddd;
+  z-index: 99;
+
+}
+
+@media only screen and (max-width:768px){
+  .menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000084;
+    display: none;
+    z-index: 100;
+    
+
+  }
+  .menu ul{
+    width: 15rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    background: #fff;
+    flex-direction: column;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.show_menu{
+  display:block
+}
+
+.customs:focus{
+  border: 1px solid red;
+  box-shadow: none;
+  outline: none;
+}
+
